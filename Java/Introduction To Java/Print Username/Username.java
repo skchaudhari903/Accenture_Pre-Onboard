@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+class Username{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the name:");
+        String name = scan.nextLine();
+        
+        System.out.println("Welcome " + name + ".");
+    }
+}
