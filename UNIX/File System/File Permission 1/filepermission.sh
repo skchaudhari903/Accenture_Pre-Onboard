@@ -1,0 +1,1 @@
+chmod 666 emp.txt
