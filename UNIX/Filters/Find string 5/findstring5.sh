@@ -1,0 +1,1 @@
+grep 'h$' teknoscript.txt

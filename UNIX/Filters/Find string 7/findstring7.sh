@@ -1,0 +1,1 @@
+grep "echo" teknoscript.txt
