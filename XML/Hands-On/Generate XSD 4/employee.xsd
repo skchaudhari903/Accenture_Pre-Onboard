@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs ="http://www.w3.org/2001/XMLSchema">
+<xs:element name="company">
+<xs:complexType>
+<xs:sequence>
+<xs:element name = "employee" maxOccurs="unbounded" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element type="xs:integer" name="id" />
+<xs:element type="xs:string" name="name" />
+<xs:element type="xs:integer" name="salary" />
+<xs:element type="xs:string" name="email" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>
