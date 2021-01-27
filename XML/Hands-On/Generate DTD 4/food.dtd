@@ -1,0 +1,22 @@
+<?xml encoding="UTF-8"?>
+<!ELEMENT breakfast_menu (food)+>
+<!ATTLIST breakfast_menu xmlns CDATA #FIXED ''>
+
+<!ELEMENT food (name,price,description,calories)>
+<!ATTLIST food
+xmlns CDATA #FIXED ''>
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+xmlns CDATA #FIXED ''>
+
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price
+xmlns CDATA #FIXED ''>
+
+<!ELEMENT description (#PCDATA)>
+<!ATTLIST description
+xmlns CDATA #FIXED ''>
+
+<!ELEMENT calories (#PCDATA)>
+<!ATTLIST calories
+xmlns CDATA #FIXED ''>

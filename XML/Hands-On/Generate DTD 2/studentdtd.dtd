@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!ELEMENT student (fName,lName,plan)>
+<!ELEMENT fName (#PCDATA)>
+<!ELEMENT lName (#PCDATA)>
+<!ELEMENT plan (courses)>
+<!ELEMENT courses (course)*>
+<!ELEMENT course (name*,shortName*,record*)>
+<!ELEMENT name ANY>
+<!ELEMENT shortName ANY>
+<!ELEMENT record (grade,date)>
+<!ELEMENT grade ANY>
+<!ELEMENT date (#PCDATA)>
+<!ATTLIST student id NMTOKEN #REQUIRED>
+<!ATTLIST courses year CDATA #IMPLIED>

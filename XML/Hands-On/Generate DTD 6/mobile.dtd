@@ -1,0 +1,27 @@
+<!ELEMENT mobilestore (mobile)+>
+<!ATTLIST mobilestore
+xmlns CDATA #FIXED ''>
+
+<!ELEMENT mobile (brand,os,model,ram,internal)>
+<!ATTLIST mobile
+xmlns CDATA #FIXED ''>
+
+<!ELEMENT brand (#PCDATA)>
+<!ATTLIST brand
+xmlns CDATA #FIXED ''>
+
+<!ELEMENT os (#PCDATA)>
+<!ATTLIST os 
+xmlns CDATA #FIXED ''>
+
+<!ELEMENT model (#PCDATA)>
+<!ATTLIST model
+xmlns CDATA #FIXED ''>
+
+<!ELEMENT ram (#PCDATA)>
+<!ATTLIST ram
+xmlns CDATA #FIXED ''>
+
+<!ELEMENT internal (#PCDATA)>
+<!ATTLIST internal
+xmlns CDATA #FIXED ''>
