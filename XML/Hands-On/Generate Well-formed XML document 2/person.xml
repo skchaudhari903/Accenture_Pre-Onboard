@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persons>
+    <person>
+        <name>Shubham</name>
+        <age>21</age>
+        <gender>Male</gender>
+        <address>
+            <doorno>101</doorno>
+            <street>Mumbai Rd</street>
+            <city>Nashik</city>
+            <state>Maharashtra</state>
+            </address>
+            <student>
+                <rollno>14</rollno>
+                <standard>17</standard>
+                <section>A</section>
+			</student>
+	</person>
+</persons>
