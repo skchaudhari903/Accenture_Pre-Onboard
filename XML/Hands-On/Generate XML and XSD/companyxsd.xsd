@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:element name="company">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="companyname" type="xs:string"/>
+                <xs:element name="address" type="xs:string"/>
+
+                <xs:element name="department" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="dname" type="xs:string"/>
+                            <xs:element name="deptphoneno" type="xs:integer"/>
+                            <xs:element name="deptfaxno" type="xs:integer"/>
+                            <xs:element name="deptemail" type="xs:string"/>
+
+                            <xs:element name="employee" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="empid" type="xs:integer"/>
+                                        <xs:element name="ename" type="xs:string"/>
+                                        <xs:element name="emailid" type="xs:string"/>
+                                        <xs:element name="phoneno" type="xs:integer"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:element name="contractemployee" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name" type="xs:string"/>
+                                        <xs:element name="phoneno" type="xs:integer"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

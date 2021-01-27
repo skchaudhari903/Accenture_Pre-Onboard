@@ -1,0 +1,32 @@
+<company>
+    <companyname>ABC</companyname>
+    <address>Mumbai</address>
+    <department>
+        <dname>IT</dname>
+        <deptphoneno>9999999</deptphoneno>
+        <deptfaxno>12345679</deptfaxno>
+        <deptemail>IT@gmail.com</deptemail>
+        <employee>
+            <empid>1</empid>
+            <ename>shubham</ename>
+            <emailid>shubham@gmail.com</emailid>
+            <phoneno>1111111111</phoneno>
+        </employee>
+    </department>
+    <department>
+        <dname>EEE</dname>
+        <deptphoneno>7890000</deptphoneno>
+        <deptfaxno>90100000</deptfaxno>
+        <deptemail>EEE@email.com</deptemail>
+        <employee>
+            <empid>2</empid>
+            <ename>x</ename>
+            <emailid>x@gmail.com</emailid>
+            <phoneno>123456781</phoneno>
+        </employee>
+        <contractemployee>
+            <name>contract1</name>
+            <phoneno>2345781</phoneno>
+        </contractemployee>
+    </department>
+</company>
