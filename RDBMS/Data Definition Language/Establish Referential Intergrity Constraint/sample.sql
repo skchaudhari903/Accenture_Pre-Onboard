@@ -1,0 +1,1 @@
+alter table PointofInterest add constraint FK foreign key (townID) references Town(townID);
