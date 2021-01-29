@@ -1,0 +1,1 @@
+alter table buses modify ac_available varchar(5);
