@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <form autocomplete="on">
+            A Simple form <br/>
+            <i>Form Fundamentals</i>
+            <fieldset>
+                <legend>Customer Info</legend>
+                Name: <input type="text" placeholder="Enter your name" name="cusname" required autofocus/> <br />
+                Telephone: <input type="tel" placeholder="Pattern: 234-567-8910" required name="telephone" pattern="[1-9]{3}[-]{1}[0-9]{3}[-]{1}[0-9]{4}"/> <br />
+                Email address: <input type="email" name="mail" placeholder="Enter your email address" multiple="multiple" required/> <br />
+            </fieldset>
+            <fieldset>
+                <legend>Books</legend>
+                <input list="books" name="book">
+                <datalist id="books" value="books">
+                    <option value="HTML5 - Bruce Lawson and Remy Sharp"></option>
+                    <option value="HTML5 : Up and Running = Mark Pilgrim"></option>
+                    <option value="Head First HTML5 Progamming - Eric Freeman"></option>
+                    <option value="Mastering HTML,CSS and JavaScript - Laura Lemay"></option>
+                </datalist>
+                Quantity (Maximum 5): <input type="number" name="quantity" min="1" max="5"/>
+            </fieldset>
+            <input type="submit" name="submit" value="submit"/>
+        </form>
+    </body>
+</html> 
