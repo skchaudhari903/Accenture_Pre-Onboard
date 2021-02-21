@@ -1,0 +1,50 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <title>TRAVEL RESERVATION FORM</title>
+    </head>
+    <body>
+        <table align="center">
+            <tr><td><h1><center>TRAVEL RESERVATION FORM</center></h1></td></tr>
+            <tr><td><h3><center>* denotes mandatory</center></h3></td></tr>
+            <tr>
+                <td><input type="text" name="passengername" value="" placeholder="Name">
+                <input type="tel" name="mobile" placeholder="*Mobile Number" required="required"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="email" name="mailId" placeholder="*Email ID" required>
+                    <select name="travelmonth">
+                        <option>Month of Travel</option>
+                        <option>Aug2018</option>
+                        <option>Sep2018</option>
+                        <option>Oct2018</option>
+                        <option>Nov2018</option>
+                        <option>Dec2018</option>
+                        <option>Jan2018</option>
+                        <option>Feb2018</option>
+                        <option>Mar2018</option>
+                        <option>Apr2018</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="package" required="required">
+                        <option value="" disabled selected>*Origin</option>
+                        <option value="goa">GOA</option>
+                        <option value="mumbai">MUMBAI</option>
+                        <option value="kerala">KERALA</option>
+                        <option value="tamilnadu">TAMILNADU</option>
+                        <option value="kolkata">KOLKATA</option>
+                    </select>&emsp;&emsp;&emsp;&ensp;
+                    <input type="text" name="destination" placeholder="Destination">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="submit" value="Get A Call">&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;&ensp;
+                <input type="reset" name="clear" value="Clear"></td>
+            </tr>
+        </table>
+    </body>
+</html>
