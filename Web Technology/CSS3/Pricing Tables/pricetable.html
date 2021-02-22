@@ -1,0 +1,102 @@
+<!-- do not make any changes in the template -->
+<!-- WRITE YOUR CODE IN THE AREA INDICATED AS FILL YOUR CODE HERE -->
+
+<html>
+<head>
+<style>
+
+/* FILL YOUR CODE HERE  */
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.columns{
+    display: inline;
+    float: left;
+    width: 33.3%;
+    margin: 0;
+    padding: 8px;
+    text-align: center;
+}
+.header{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+li{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid;
+    border-color: #f5f5f5;
+}
+.colour{
+    background: #F0F0F0;
+}
+.price{
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition:0.3s;
+    transition: 0.3s;
+}
+.button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center">Pricing Tables</h2>
+
+<div class="columns" id="1">
+  <ul class="price">
+    <li class="header">Basic</li>
+    <li class="colour">$ 9.99 / year</li>
+    <li>10GB Storage</li>
+    <li>10 Emails</li>
+    <li>10 Domains</li>
+    <li>1GB Bandwidth</li>
+    <li class="colour"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+<div class="columns" id="2">
+  <ul class="price">
+    <li class="header" style="background-color:#4CAF50">Pro</li>
+    <li class="colour">$ 24.99 / year</li>
+    <li>25GB Storage</li>
+    <li>25 Emails</li>
+    <li>25 Domains</li>
+    <li>2GB Bandwidth</li>
+    <li class="colour"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+<div class="columns" id="3">
+  <ul class="price">
+    <li class="header">Premium</li>
+    <li class="colour">$ 49.99 / year</li>
+    <li>50GB Storage</li>
+    <li>50 Emails</li>
+    <li>50 Domains</li>
+    <li>5GB Bandwidth</li>
+    <li class="colour"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+</body>
+</html>
