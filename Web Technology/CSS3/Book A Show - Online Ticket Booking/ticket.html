@@ -1,0 +1,138 @@
+<!-- do not make any changes in the template -->
+<!-- WRITE YOUR CODE IN THE AREA INDICATED AS FILL YOUR CODE HERE -->
+
+
+<html>
+<head></head>
+<body>
+
+	<style>
+  
+  /* FILL YOUR CODE HERE  */
+  table{
+      font-family: monospace;
+      font-weight: bold;
+  }
+  h1{
+      color: #0000FF;
+      font-family: monospace;
+      text-align: center;
+  }
+  body{
+      background-color: #00CED1;
+      color: #0C1584;
+  }
+  #result{
+      font-weight: bold;
+      color: #0000FF;
+  }
+  
+  
+    </style>
+<form  onsubmit="return validate()" name="book">
+<center>
+<h1>BOOK A SHOW - TICKET BOOKING</h1>
+	<table>
+		<tr>
+		<td>Name</td>
+		<td>
+		    
+		     <!-- FILL YOUR CODE [INPUT TYPE=TEXT...] HERE  -->
+		     <input type ="text" name="name" placeholder="Enter the name" pattern="[0-9A-Za-z ]+" required></td>
+		     
+		</tr>
+
+		<tr>
+			<td>Movie Name</td>
+			<td><input type="text" list="movies" name="moviename" autocomplete="on" placeholder="Movie Name" required>
+			<datalist id="movies">
+  			        <option value="Irada">
+		  	<option value="Rangoon">
+  			        <option value="Logan">
+  			        <option value="Fist Fight">
+			</datalist>
+			</td>
+		</tr>
+		<tr>
+			<td>Circle</td>
+			<td><input type="text" list="circles" name="circle" autocomplete="on" required>
+			<datalist id="circles" name="circles">
+  			        <option value="Silver">
+		  	<option value="Gold">
+  			        <option value="Platinum">
+			</datalist>
+			</td>
+		</tr>
+		<tr>
+		<td>Phone no</td>
+		<td>
+		    
+		    <!-- FILL YOUR CODE [INPUT TYPE=TEXT...] HERE  -->
+		    <input type="text" name="phone" placeholder="Enter Mobile Number" pattern="[0-9]{10}"></td>
+		    
+		</tr>
+
+		<tr>
+		<td>Show date and time</td>
+		<td><input type="date" name="showdate"></td>
+		</tr>
+
+		<tr>
+		<td>No of Adults </td>
+		<td><input type="number" name="tickets" id="tickets" min="1" max="10"></td>
+		</tr>
+
+		<tr>
+		<td>No of childrens </td>
+		<td><input type="number" name="childrens"  id="childrens" min="1" max="5"></td>
+		</tr>
+
+        <tr>
+		<td><button type="submit" name="Book My Show">Book My Show</button></td>
+		<td><button type="reset" name="reset">Reset</button></td>
+		</tr>
+
+        <tr>
+        <td colspan="2">
+        <div  id="result"></div>
+        </td>
+        </tr>
+
+	</table>
+	
+	<script>
+	function validate()
+	{
+		var x=document.getElementById("tickets").value;
+		var y=document.getElementById("childrens").value;
+		var date=document.book.showdate.value;
+		var currdate=new Date();
+		var curr=Date.parse(currdate.toString());
+		var bookdate=Date.parse(date);
+		var adult=x*200;
+		var childern=y*100;
+		var total=adult+childern;
+
+		if(bookdate<curr)
+		{
+		alert("Show date and time should be either current date or future date");
+	    return false;
+		}
+		if(y>=x)
+		{
+ 		 alert("No of tickets should be greater than the no of children");
+	return false;
+
+		}
+		if(y<x)
+		{
+		document.getElementById("result").innerHTML="Your approximate ticket amount is "+total+" INR";
+	    return false;
+
+		}
+		}
+	</script>
+	</center>
+</form>
+</body>
+</html>
