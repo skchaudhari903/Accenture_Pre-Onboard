@@ -1,0 +1,90 @@
+<!-- This is a partial code. Implement the neccessary codes -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1
+            {
+                font-style: italic;
+                font-weight: bold;
+                text-align: center;
+                color: #b03060;
+            }
+            table{
+                margin-left: 35%;
+                border-style: solid 5px;
+                border-width: 30%;
+            }
+            tr,td{
+                padding: 10px;
+                border-style: solid;
+                border-width: 2px;
+            }
+            #submit{
+                float: left;
+                width: 45%;
+                margin-left: 45%;
+            }
+            div{
+                text-align: center;
+                font-weight: bold;
+            }
+            #result{
+                font-style: italic;
+                color: #FF0000;
+                font-size: 40px;
+            }
+            #discount{
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body style="background-color:#99FFFF;">
+        <h1>DISCOUNT PRICE</h1>
+        <form onsubmit="">
+            <table>
+                <tr>
+                    <td>Product Name</td>
+                    <td><input type="text" name="name" id="name" pattern="[a-zA-Z0-9 ]+" required> </td>
+                </tr>
+                <tr>
+                    <td>Product Price</td>
+                    <td><input type="number" name="price" min="15001" id="price" required></td>
+                </tr>
+                <tr>
+                    <td>Season</td>
+                    <td>
+                        <select name="season" id="season">
+                        <option value="summer">SUMMER SALE</option>
+                        <option value="newyear">NEW YEAR SALE</option>
+                        <option value="clearance">CLEARANCE SALE</option>
+                        </select>
+                    </td>
+                </tr>
+            </table><br>
+            <input type="submit" value="GET DISCOUNT PRICE" id="submit" name="submit" onclick="discount()">
+        </form>
+        <div id="discount"></div>
+        <div id="result"></div>
+        <script>
+            function discount(){
+                var p=document.getElementById("price").value;
+                var s=document.getElementById("season").value;
+                var d;
+                if(s=="summer"){
+                    document.getElementById("discount").innerHTML="The discount is 10%";
+                    d=(p-(p*0.1));
+                }
+                else if(s=="newyear"){
+                    document.getElementById("discount").innerHTML="The discount is 5%";
+                    d=(p-(p*0.05));
+                }
+                else if(s=="clearance"){
+                    document.getElementById("discount").innerHTML="The discount is 15%";
+                    d=(p-(p*0.15));
+                }
+                document.getElementById("result").innerHTML="The discounted price : Rs "+d;
+            }
+        </script>
+    </body>
+</html>
