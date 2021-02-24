@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--This is a partial code. Implemented the essential codes required -->
+<html>
+    <body>
+        Enter word/sentence to check for palindrome:<input type="text" name="palin"><br>
+        <input type="submit" name="palinbtn" value="Check Palindrome" onclick="check();">
+        <script>
+            document.getElementsByName("palinbtn")[0].onclick=function(){check()};
+            function check(){
+                var string=document.getElementsByName("palin")[0].value;
+                var pall = string.split(" ").join("");
+                var pal=pall.toLowerCase();
+                var i=0;
+                var j=pal.length-1;
+                var t=true;
+                while(i<=j){
+                    if(pal.charAt(i)!=pal.charAt(j)){
+                        t=false;
+                    }
+                    i+=1;
+                    j-=1;
+                }
+
+                if(t){
+                    alert("The entry is a palindrome.");
+                }
+                else{
+                    alert("The entry is not a palindrome.");
+                }
+            }   
+        </script>
+    </body>
+</html>
