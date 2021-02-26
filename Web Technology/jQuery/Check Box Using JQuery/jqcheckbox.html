@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("input[type=checkbox]").click(function(){
+                    var number = $('input:checked').length;
+                    $("span").text(number);
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <input type="checkbox" name="check" id="c1" class="cl"/>Red
+        <input type="checkbox" name="check" id="c2" class="cl"/>Green
+        <input type="checkbox" name="check" id="c3" class="cl"/>Blue
+        <input type="checkbox" name="check" id="c4" class="cl"/>Black
+        <br>
+        <div id="result">
+            <p><span>0</span> are checked</p>
+        </div>
+    </body>
+</html>
