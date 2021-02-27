@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                var x = 0;
+                $(window).resize(function()
+                {
+                    $("span").text(x += 1);
+                    
+                });
+                
+            });
+        </script>
+    </head>
+    <body>
+        <p id="resize">
+            Window resized
+            <span>0</span> times.</p>
+        <p id="test">Try resizing your browser window.</p>
+    </body>
+</html>
